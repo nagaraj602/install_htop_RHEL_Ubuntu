@@ -9,7 +9,7 @@ if [ "$distro" = "rhel" ]; then
     htop
 elif [ "$distro" = "ubuntu" ]; then
     sudo apt-get update -y > /dev/null
-    sudo apt install htop -y > /dev/null
+    sudo apt-get install htop -y > /dev/null
     htop
 else
     echo "Unsupported Distribution - Only RHEL and Ubuntu supported."
